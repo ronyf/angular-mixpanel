@@ -138,7 +138,8 @@ angular.module('analytics.mixpanel', [])
                     append: callMixpanelFn('people.append'),
                     track_charge: callMixpanelFn('people.track_charge'),
                     clear_charges: callMixpanelFn('people.clear_charges'),
-                    delete_user: callMixpanelFn('people.delete_user')
+                    delete_user: callMixpanelFn('people.delete_user'),
+                    union: callMixpanelFn('people.union')
                 }
             };
         };
