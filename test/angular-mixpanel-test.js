@@ -52,4 +52,12 @@ describe('Provider: $mixpanelProvider', function () {
         expect(mp.register).toBeDefined();
         expect(mp.people).toBeDefined();
     });
+
+    it('should set configuration', function () {
+        var configuration = { persistence: 'localStorage' };
+
+        $mixpanel.config(configuration);
+
+        expect($mixpanel.config()).toBe(configuration);
+    });
 });
