@@ -121,6 +121,7 @@ angular.module('analytics.mixpanel', [])
                 track: callMixpanelFn('track'),
                 track_links: callMixpanelFn('track_links'),
                 track_forms: callMixpanelFn('track_forms'),
+                time_event: callMixpanelFn('time_event'),
                 register: callMixpanelFn('register'),
                 register_once: callMixpanelFn('register_once'),
                 unregister: callMixpanelFn('unregister'),
